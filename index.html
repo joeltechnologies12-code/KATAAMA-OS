@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATAAMA OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="desktop">
+        <header class="topbar">
+            <div class="brand">KATAAMA <span>OS</span></div>
+            <div id="clock">Loading time...</div>
+        </header>
+
+        <section class="welcome">
+            <p class="eyebrow">JOEL TECHNOLOGIES INTERNATIONAL</p>
+            <h1>Welcome to KATAAMA OS</h1>
+            <p>Your technology. Your future.</p>
+        </section>
+
+        <section class="app-grid">
+            <button class="app" data-app="about">
+                <span class="app-icon">💻</span>
+                <span>About KATAAMA</span>
+            </button>
+
+            <button class="app" data-app="notes">
+                <span class="app-icon">📝</span>
+                <span>Notes</span>
+            </button>
+
+            <button class="app" data-app="calculator">
+                <span class="app-icon">🧮</span>
+                <span>Calculator</span>
+            </button>
+
+            <button class="app" data-app="terminal">
+                <span class="app-icon">⌨️</span>
+                <span>Terminal</span>
+            </button>
+        </section>
+
+        <section id="window" class="window hidden">
+            <div class="window-header">
+                <strong id="window-title">Application</strong>
+                <button id="close-window" aria-label="Close window">✕</button>
+            </div>
+            <div id="window-content" class="window-content"></div>
+        </section>
+
+        <footer class="taskbar">
+            <button id="home-button">◆ KATAAMA</button>
+            <span>Prototype Edition</span>
+            <span>Made by Joel Technologies</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

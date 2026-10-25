@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #071426;
+}
+
+.desktop {
+    min-height: 100vh;
+    padding: 20px;
+    padding-bottom: 90px;
+    background:
+        radial-gradient(circle at top right, #1764a5, transparent 45%),
+        linear-gradient(135deg, #071426, #102b50, #071426);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    background: #ffffff12;
+    border: 1px solid #ffffff25;
+    border-radius: 14px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #4cc9f0;
+}
+
+#welcome {
+    margin-top: 50px;
+}
+
+.welcome {
+    margin: 70px 0 35px;
+}
+
+.eyebrow {
+    color: #4cc9f0;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 55px);
+    margin: 12px 0;
+}
+
+.welcome p:last-child {
+    color: #c6d6e9;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+    gap: 18px;
+}
+
+.app {
+    border: 1px solid #ffffff25;
+    background: #ffffff12;
+    color: white;
+    border-radius: 15px;
+    padding: 22px 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s;
+}
+
+.app:hover {
+    background: #ffffff25;
+    transform: translateY(-4px);
+}
+
+.app-icon {
+    font-size: 35px;
+}
+
+.window {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(500px, 90%);
+    color: #172033;
+    background: #f4f7fb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px #0008;
+}
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: #dce8f5;
+}
+
+.window-header button {
+    cursor: pointer;
+    border: none;
+    padding: 7px 10px;
+}
+
+.window-content {
+    padding: 20px;
+    max-height: 55vh;
+    overflow: auto;
+}
+
+.window-content textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    font: inherit;
+}
+
+.window-content button,
+.window-content input {
+    padding: 10px;
+    margin: 4px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 18px;
+    background: #071426eF;
+    border-top: 1px solid #ffffff25;
+    font-size: 12px;
+}
+
+.taskbar button {
+    padding: 10px 14px;
+    color: white;
+    background: #1764a5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .taskbar {
+        flex-wrap: wrap;
+    }
+
+    .welcome {
+        margin-top: 45px;
+    }
+}
